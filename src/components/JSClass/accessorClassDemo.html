@@ -1,0 +1,31 @@
+<html>
+  <head>
+   
+  </head>
+  <body>
+    <script>
+      var userName = prompt("Enter User Name")
+      var role = prompt("Enter Your Role","admin | user")
+      class Product
+      {
+        _productName;
+        get ProductName(){
+          return this._productName;
+        }
+        set ProductName(newName) {
+          if(role === "admin"){
+              this._productName = newName
+          } else {
+            document.write(`Hello ! ${newName} you are not authorized to set product name`)
+          }
+        }
+      }
+      let obj = new Product();
+      obj.ProductName = prompt("Enter Name for Product")
+      if(obj.ProductName){
+        document.write(`Product Name=${obj.ProductName}`)
+      }
+    </script>  
+  </body>
+</html>
+

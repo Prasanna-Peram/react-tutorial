@@ -1,0 +1,38 @@
+input:optional+span {
+    display: none;
+}
+input:required+span {
+    display: inline;
+    color:red;
+}
+input:required {
+    border:1px solid red;
+}
+input:valid+span {
+    display: none;
+}
+input:invalid~div {
+    display: block;
+    color:red;
+}
+input:valid~div {
+    display: none;
+}
+input:valid {
+    border:1px solid black;
+}
+.terms:checked~button {
+    display: block;
+}
+.terms~button {
+    display: none;
+}
+.terms+label {
+    color:red;
+}
+.terms:checked+label {
+    color:green;
+}
+#Price:focus~div {
+    display: block;
+}

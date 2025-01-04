@@ -1,0 +1,28 @@
+@keyframes Spin {
+    from {
+         transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Zoom {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(3);
+    }
+}
+.image-spin {
+    animation-name: Spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.image-zoom {
+    animation-name: Zoom;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

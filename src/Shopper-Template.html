@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header 
+        {
+            font-size: 22px;
+            font-family: Segoe UI;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .brand-title {
+            font-weight: bold;
+            font-size: 28px;
+        }
+        .main-nav span {
+            padding-right: 20px;
+            font-size: 20px;
+        }
+        .main-nav span:hover {
+            font-weight: bold;
+            cursor:grab;
+        }
+        .shortcut-nav span {
+            padding-right: 5px;
+            font-size: 20px;
+        }
+        article {
+            font-size: 18px;
+            font-family: Segoe UI;
+            background-color: black;
+            color:white;
+            padding: 10px;
+            text-align: center;
+        }
+        .bi-lightning-fill {
+            color:gold;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            height: 500px;
+            margin-top: 10px;
+        }
+        .women-fashion {
+            background-image: url("./images/women-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+            grid-row: 1;
+            grid-column: 3;
+        }
+        .men-fashion {
+            background-image: url("./images/men-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+            grid-row: 1;
+            grid-column: 1;
+        }
+        .kids-fashion {
+            background-image: url("./images/kids-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+            grid-row: 1;
+            grid-column: 2;
+        }
+        .main-title {
+            font-size: 40px;
+            font-family: Segoe UI;
+            font-weight: bold;
+            color:white;
+            text-shadow: 2px 2px 2px black;
+        }
+        .btn-shop {
+            box-shadow: 2px 2px 2px gray;
+            border: 1px solid black;
+            width: 120px;
+            background-color: white;
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .women-fashion:hover, .men-fashion:hover, .kids-fashion:hover {
+            opacity: 1;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="brand-title">Shopper.</span>
+        </div>
+        <div>
+            <nav class="main-nav">
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blog</span>
+                <span>Docs</span>
+            </nav>
+        </div>
+        <div>
+            <nav class="shortcut-nav">
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <article>
+            <span class="bi bi-lightning-fill"></span>
+            <span> HAPPY HOLIDAY DEAL ON EVERYTHING </span>
+            <span class="bi bi-lightning-fill"></span>
+        </article>
+        <main>
+            <div class="women-fashion">
+                <div class="main-title">Women</div>
+                <div class="btn-shop">
+                    <span>Shop Women</span> <span class="bi bi-arrow-right"></span>
+                </div>
+            </div>
+            <div class="men-fashion">
+                <div class="main-title">Men</div>
+                <div class="btn-shop">
+                    <span>Shop Men</span> <span class="bi bi-arrow-right"></span>
+                </div>
+            </div>
+            <div class="kids-fashion">
+                <div class="main-title">Kids</div>
+                <div class="btn-shop">
+                    <span>Shop Kids</span> <span class="bi bi-arrow-right"></span>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

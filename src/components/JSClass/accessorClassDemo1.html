@@ -1,0 +1,41 @@
+<html>
+  <head>
+   
+  </head>
+  <body>
+    <script>
+      
+      class Product
+      {
+       Rating = {
+        Hyd: {
+            Vendor: {
+                Ratings: {Rate:4.5, Reviews:5600}
+            },
+            customer:{
+                Ratings: {Rate:4.1, Reviews:100}
+            }
+        },
+        Delhi :{
+            Vendor: {
+                Ratings: {Rate:4.8, Reviews:8900}
+            },
+            customer:{
+                Ratings: {Rate:3.1, Reviews:600}
+            }
+        }
+       }
+       get HydCustRating(){
+         return this.Rating.Hyd.customer.Ratings.Rate
+       }
+       set HydCustRating(newRating) {
+        return this.Rating.Hyd.customer.Ratings.Rate = newRating
+       }
+      }
+      let obj = new Product();
+      obj.HydCustRating = prompt("Enter New Customer Rating for Hyd");
+      document.write(`Hyd Customer Rating: ${obj.HydCustRating}`)
+    </script>  
+  </body>
+</html>
+
